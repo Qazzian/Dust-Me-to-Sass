@@ -1,9 +1,9 @@
 # Dust-Me-to-Sass
 
-Takes a number of dust-me exports and a sourcemap file and produce 
+Takes a number of [dust-me](https://addons.mozilla.org/en-us/firefox/addon/dust-me-selectors/) exports and a sourcemap file and produce 
 a new export showing where all the used/unused selector are in the original source file.
 
-This requires a modified version of Dust-Me that can record the column numbers of the found selectors in it's json exports.
+This requires a [modified version of Dust-Me](https://github.com/Qazzian/dustmeselectors) that can record the column numbers of the found selectors in it's json exports.
 
 ## Install
 
