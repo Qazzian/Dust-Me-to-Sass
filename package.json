@@ -1,0 +1,14 @@
+{
+  "name": "source-map-reader",
+  "version": "1.0.0",
+  "description": "Small project for reading source maps and using them to annotate the output of firefox's Dust Me plugin (used for auditing unused css selectors)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Qazzian@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "source-map": "^0.5.3"
+  }
+}
