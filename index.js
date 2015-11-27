@@ -95,6 +95,15 @@ function sourceMapReader(options) {
                         }
                     }
 
+                    // Remove duplicates
+                    // Better to do it here than to loop through all the files and selectors again.
+                    if (parsingMode === 'used' && self.collatedData[sourceData.source]['unused'][selector.selector]) {
+                        delete self.collatedData[sourceData.source]['unused'][selector.selector];
+                    }
+                    else if (parsingMode === 'unused' && self.collatedData[sourceData.source]['used'][selector.selector]) {
+                        return;
+                    }
+
                     self.collatedData[sourceData.source][self.parsingMode].push({
                         selector: selector.selector,
                         cssFile: stylesheet.url,
